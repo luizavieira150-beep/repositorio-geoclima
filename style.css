@@ -1,44 +1,44 @@
-* {
+* { /*Parte que define os limites da página*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
+header {  /*Define as cores e o tamanho do cabeçalho da página*/
     background-color: powderblue;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-h1{
+h1{  /* Define a fonte principal do site e onde deve ficar alinhada*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
-p {
+p {  /*Define fonte, tamanho e onde o subtítulo deve ficar alinhado*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     font-size: small;
 }
 
-h2 {
+h2 {  /*Define fonte e alinhamento do h2*/
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    text-align: center; 
 }
 
-body {
+body {  /*Corpo do site, cor de fundo, fonte e preenchimento*/
     font-family: sans-serif;
     padding: 20px;
     background-color: aliceblue;
 }
 
-main {
+main {  /*Corpo do site, com o alinhamento*/
     max-width: 350px;
     margin: 40px auto;
     text-align: center;
 }
 
-form {
+form {  /*Formulário, fonte, cor de fundo, preenchimento e borda*/
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #eee;
     display: flex;
@@ -50,14 +50,14 @@ form {
     border-radius: 10px;
 }
 
-input {
+input { 
     padding: 8px;
     margin: 5px;
     border-radius: 5px;
     border: 1px solid gray;
 }
 
-button {
+button { /*botão do formulário*/
     padding: 8px;
     background-color: rgb(73, 134, 158);
     color: white;
@@ -65,7 +65,7 @@ button {
     border-radius: 5px;
 }
 
-footer {
+footer { /*rodapé do site*/
     text-align: center;
     padding: 15px;
     border-top: 1px solid #ccc;

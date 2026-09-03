@@ -14,21 +14,23 @@
         <p>Se busca segurança para checar as previsões você está no lugar certo!!</p>
     </header>
 
-    <main> <!--corpo do site-->
+    <main class="container"> <!--corpo do site-->
         <article>
             <h2>Consulte o clima</h2> <!--subtítulo do site-->
             <form> <!--formulário para pesquisa do lugar-->
-                <label for="mensagem">Digite sua cidade</label>
-                <textarea id="mensagem" name="mensagem" aria-placeholder="Digite aqui"></textarea>
-                <button type="submit">Buscar</button> <!--botão para envio-->
+                <label for="cidade">Digite sua cidade</label>
+                <input type="text" id="cidade" placeholder="Ex.: Lages">
+                <button type="button" id="buscar">Buscar clima</button> <!--botão para envio-->
             </form>
+            <section id="resultado"></section>
         </article>
     </main>
 
-    <footer>
+    <footer> <!--rodapé do site-->
         <p>&copy; 2026 GeoClima. Todos os dieitos foram reservados.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
