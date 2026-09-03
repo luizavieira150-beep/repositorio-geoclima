@@ -5,7 +5,7 @@
 }
 
 header {  /*Define as cores e o tamanho do cabeçalho da página*/
-    background-color: powderblue;
+    background-color: #b0e0e6;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -30,11 +30,12 @@ body {  /*Corpo do site, cor de fundo, fonte e preenchimento*/
     font-family: sans-serif;
     padding: 20px;
     background-color: aliceblue;
+    text-align: center;
 }
 
 main {  /*Corpo do site, com o alinhamento*/
-    max-width: 350px;
-    margin: 40px auto;
+    max-width: 100%;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -43,7 +44,7 @@ form {  /*Formulário, fonte, cor de fundo, preenchimento e borda*/
     background-color: #eee;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
     border: 1px solid gray;
     padding: 20px;
@@ -51,18 +52,23 @@ form {  /*Formulário, fonte, cor de fundo, preenchimento e borda*/
 }
 
 input { 
-    padding: 8px;
+    width: 100%;
+    padding: 12px;
     margin: 5px;
     border-radius: 5px;
     border: 1px solid gray;
+    font-size: 16px;
 }
 
 button { /*botão do formulário*/
+    width: 100%;
     padding: 8px;
     background-color: rgb(73, 134, 158);
     color: white;
     border: none;
     border-radius: 5px;
+    margin-top: 8px;
+    text-align: center;
 }
 
 footer { /*rodapé do site*/
@@ -72,4 +78,43 @@ footer { /*rodapé do site*/
     margin-top: 30px;
     background-color: rgb(40, 89, 109);
     color: #ccc;
+}
+
+
+/*Estilo base: pensado para telas pequenas*/
+.container {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+input, button {
+    width: 100%;
+}
+
+/*A partir de 600px de largura, aproveita mais espaço*/
+@media (min-width: 600px) {
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+
+    input {
+        width: 70%;
+    }
+
+    button {
+        width: 28%;
+    }
+}
+
+input button {
+    min-height: 44px;
+    font-size: 16px;
+    padding: 10px 14px;
+}
+
+button {
+    margin-top: 8px;
 }
