@@ -49,6 +49,7 @@ form {  /*Formulário, fonte, cor de fundo, preenchimento e borda*/
     border: 1px solid gray;
     padding: 20px;
     border-radius: 10px;
+    align-items: center;
 }
 
 input { 
@@ -109,7 +110,7 @@ input, button {
     }
 }
 
-input button {
+input, button {
     min-height: 44px;
     font-size: 16px;
     padding: 10px 14px;
